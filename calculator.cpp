@@ -1,16 +1,39 @@
 #include <iostream>
 #include <Python.h>
 #include <string>
+#include <limits>
+
+extern "C" int sub();
 
 int main()
 {
-	Py_Initialize();
+	char op;
+	std::cout << "Choose operator (+ or -)";
+	std::cin >> op;
+	// flushes leftover input
+	std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+	switch (op)
+	{
+		case '+':
+		{
+			Py_Initialize();
+			PyRun_SimpleString("import sys; sys.path.append('.')");
+			// Runs on the python file like a command (imports stuff)
+			PyRun_SimpleString("import addition; addition.add()");
+			// Runs addition.py and calls out function add()
+			Py_Finalize();
+			break;
+		}
+		case '-':
+		{
+			sub();
+			break;
+		}
+		default:
+			std::cout << "Invalid Operator!" << std::endl;
+	}
 	
-	PyRun_SimpleString("import sys; sys.path.append('.')");
 	
-	PyRun_SimpleString("import addition; addition.add()");
-	
-	Py_Finalize();
 	
 	return 0;
 	
