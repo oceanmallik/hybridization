@@ -1,2 +1,7 @@
+# files: 
 calculator
 calculator.o
+main
+
+# folders: 
+__pycache__/
