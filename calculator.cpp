@@ -4,22 +4,12 @@
 
 int main()
 {
-	int num1, num2;
-	
-	std::cout << "Enter first number: ";
-	std::cin >> num1;
-	std::cout << "Enter second number: ";
-	std::cin >> num2;
-	
 	Py_Initialize();
-	PyRun_SimpleString("import sys");
-    PyRun_SimpleString("sys.path.append('.')");
-    
-	std::string command = "import addition\n"
-						  "result = addition.addition(" + std::to_string(num1) + "," + std::to_string(num2) + ")\n"
-						  "print(f'[C++ Side] The total is: {result}')";
 	
-	PyRun_SimpleString(command.c_str());
+	PyRun_SimpleString("import sys; sys.path.append('.')");
+	
+	PyRun_SimpleString("import addition; addition.add()");
+	
 	Py_Finalize();
 	
 	return 0;
