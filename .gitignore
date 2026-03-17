@@ -3,6 +3,12 @@ calculator
 calculator.o
 subtraction.so
 main
+hybridization.sln
+multiplication.so.dbg
+multiplication.so
+multiplication
 
 # folders: 
 __pycache__/
+CSharpMath/bin/
+CSharpMath/obj/
