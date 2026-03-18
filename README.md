@@ -1,3 +1,5 @@
+[!NOTE]
+> ONLY ARM64 WORKS FOR NOW
 To compile the c: 
 ```bash
 gcc -shared -o subtraction.so -fPIC subtraction.c
