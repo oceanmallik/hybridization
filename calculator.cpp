@@ -10,7 +10,7 @@ extern "C" int divide();
 int main()
 {
 	char op;
-	std::cout << "Choose operator (+, -, * or /)";
+	std::cout << "[C++] Choose operator (+, -, * or /)";
 	std::cin >> op;
 	// flushes leftover input
 	std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
