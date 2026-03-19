@@ -7,8 +7,10 @@ hybridization.sln
 multiplication.so.dbg
 multiplication.so
 multiplication
+libdivision.so
 
 # folders: 
 __pycache__/
 CSharpMath/bin/
 CSharpMath/obj/
+division/target/
