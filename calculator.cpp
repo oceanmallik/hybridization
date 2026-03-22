@@ -10,6 +10,8 @@ extern "C" int divide();
 int main()
 {
 	char op;
+	std::cout << "Welcome to Polyglot Calculator" << std::endl;
+	std::cout << "[Python >> +] [C >> -] [C# >> *] [Rust >> /]" << std::endl;
 	std::cout << "[C++] Choose operator (+, -, * or /)";
 	std::cin >> op;
 	// flushes leftover input
