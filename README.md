@@ -5,6 +5,27 @@ This project seamlessly links Python, C, C#, and Rust through a master C++ orche
 > [!NOTE]
 > This project currently supports Linux on both **ARM64** (Apple Silicon VMs, Raspberry Pi) and standard **x64** (Intel/AMD) architectures. Run the commands below based on your system.
 
+# 🚀 Quick Start (Automated Build)
+
+The easiest way to compile the entire project is to use the included build script. It will automatically detect your system architecture and compile all 5 languages.
+
+### 1. Make the script executable and Run the build script (only needed once)
+```bash
+chmod +x build.sh
+./build.sh
+```
+
+### 2. Run the Polyglot Calculator
+```bash
+./main
+```
+
+---
+
+# 🛠️ Manual Compilation Steps
+
+If you prefer to compile each language manually, follow these steps based on your a
+
 ### 1. Compile the C Library (Subtraction)
 ```bash
 gcc -shared -o subtraction.so -fPIC subtraction.c
