@@ -19,7 +19,7 @@ Before building the project, ensure you have the required compilers and SDKs ins
     ```
 *   **Rust:** The Rust compiler and Cargo package manager. (It is recommended to use `rustup`).
     ```bash
-    curl --proto '=https' --tlsv1.2 -sSf [https://sh.rustup.rs](https://sh.rustup.rs) | sh
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
     ```
 *   **C# (.NET 10):** The .NET 10 SDK (required for Native AOT compilation). 
     *Please follow the [Official Microsoft Documentation](https://learn.microsoft.com/en-us/dotnet/core/install/linux) to install the .NET 10 SDK for your specific Linux distribution.*
