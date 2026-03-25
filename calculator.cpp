@@ -33,10 +33,9 @@ int main()
             #else
                 Py_Initialize();
             #endif
-
-			PyRun_SimpleString("import sys; sys.path.append('.')");
-			PyRun_SimpleString("import addition; addition.add()");
-			Py_Finalize();
+				PyRun_SimpleString("import sys; sys.path.append('.')");
+				PyRun_SimpleString("import addition; addition.add()");
+				Py_Finalize();
 			break;
 		}
 		case '-':
@@ -62,8 +61,6 @@ int main()
 		default:
 			std::cout << "Invalid Operator!" << std::endl;
 	}
-	
-	// Ending this repo cause there is nothing to add now. 
 	
 	return 0;
 	
